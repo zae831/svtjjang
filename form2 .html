@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>디미고</title>
+<meta charset="utf-8">
+
+</head>
+
+<body>
+스마트문화앱콘텐츠제작<br>
+<!--폼 만들기 연습-->
+<form action = "search.php" method="post" autocomplete="off">
+    <fieldset>
+        <legend>개인정보</legend>
+        <label for = "name">이름</label>
+        <input type="text" id="name">
+        <label for = "mail">이메일</label>
+        <input type="text" id="mail" size="50" maxlength="15">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>로그인정보</legend>
+        <label for = "id"">아이디</label>
+        <input type="text" id="id">
+        <label for = "pwd">비밀번호</label>
+        <input type="password" id="pwd">
+
+        <input type="hidden" name="chk" value="yes">
+
+        <input type="search">
+        <input type="url">
+        <input type="email">
+        <input type = "tel">
+    
+        <input type="number" min="1" max="5" value="1">
+        <input type="range" min="1" max="3" value="1" step="1">
+    <br>
+        <label><input type="radio" name="subject" value="com1" checked>com1</label>
+        <label><input type="radio" name="subject" value="com2">com2</label>
+
+        <label><input type="checkbox" name="sub1" value="app1">app1</label>
+        <label><input type="radio" name="sub2" value="app2" checked>app2</label>
+
+        <br>
+        <input type="color" value="#0011EFF">
+        <input type="date" value="2020-05-08">
+        <input type="time" value="15:00">
+        <input type="datetime-locals" value="2020-05-08T14:30">
+
+        <input type="submit" value="aaa"><input type="reset">
+        <input type="image" src="img3.jpg" alt="login">
+        <input type="button" value="새 탭열기" onclick="window.open()">
+        <input type ="file">
+        <input type="text" autofocus required>
+        <input type ="text" placeholder="홍길동">
+        <input type ="text" value="디미고" readonly>         
+    </fieldset>
+</form>
+</form>
+
+<select size = "10" multiple>
+   <optgroup label="공과대학">
+    <option value="archi">건축공학과</option>
+    <option value="mechanic"slected>기계공학과</option>
+    <option value="computer">컴퓨터공학과</option>
+</optgroup>
+
+<optgroup label="인문대학">
+    <option value="history">사학과</option>
+    <option value="lang"slected>어문학부</option>
+    <option value="philo">철학과</option>
+</optgroup>
+
+    <input type="text" list="choices">
+    <datalist id = "choices">
+        <option value="grammar" label="문법"></option>
+        <option value="voca" label="어휘"></option>
+        <option value="speaking" label="회화"></option>
+        <option value="listening" label="듣기"></option>
+    </datalist>
+    <textarea cols ="50" rows="S"></textarea>
+    <p><label>진행률</label><progress value="50" max="100"></progress></p>
+    <p><label>사용량</label><meter value="50" min="0" max="100"></meter></p>
+
+
+</select>
+</body>
+
+</html>
