@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>디미고</title>
+<meta charset="utf-8">
+<style>
+    table{
+        width:80%;
+        border:2px solid #222;
+        border-collapse:collapse;
+    }
+    th,td{
+        border:2px solid #ccc;
+        padding:5px;
+        font-size:0.8em;
+    }
+</style>
+</head>
+
+<body>
+스마트문화앱콘텐츠제작<br>
+
+<!--테이블 만들 때 필요한 태그 table, tr, td, th -->
+<figure>
+<table border = "1">
+
+    <colgroup>
+    <col>
+    <col span="3" style="background-color : rgb(0,255,55)">
+    </colgroup>
+    <!-- 표에 제목 cpation 사용-->
+    <!-- <caption>
+        <strong>디미고 학생 소개페이지</strong>
+        <p>디미고 학생 소개하는 페이지입니다</p>
+    </caption> -->
+    <!--표 구조 정의한다 thead, tbody, tfoot-->
+    <thead>
+    <tr>
+        <th>학번</th>
+        <td>3127</td>
+        <th>이름</th>
+        <td>최혜인</td>
+    </tr>
+    </thead>
+    <!-- 테이블 행 열 합치기 colspan, rowspan-->
+<tbody>
+    <tr>
+        <th>연락처</th>
+        <td colspan="3">010-1234-5678</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <th rowspan="2">취미</th>
+        <td>영화보기</td>
+        <th rowspan="2">특기</th>
+        <td>글쓰기</td>
+    </tr>
+    <tr>
+        <td>유튜브</td>
+        <td>오래자기</td>
+    </tr>
+</tfoot>
+</table>
+<ficaption>
+    디미고 학생 소개페이지
+</ficaption>
+</figure>
+</body>
+
+</html>
